@@ -19,9 +19,12 @@ public class BankAccountMain {
 
         System.out.println(bankAccount.getInfo());
 
+        System.out.println("");
 
-        System.out.println("Adja meg a másik ügyfél nevét!");
-        String anotherOwner = scanner.nextLine();
+
+        System.out.println("Másik ügyfél neve?");
+            String anotherOwner = scanner.nextLine();
+
 
         System.out.println("Új Számlaszáma (kötőjellel elválasztva)?");
             String anotherAccountNumber = scanner.nextLine();
@@ -31,6 +34,7 @@ public class BankAccountMain {
             int anotherBalance = scanner.nextInt();
 
         BankAccount anotherBankAccount = new BankAccount(anotherAccountNumber,anotherOwner,anotherBalance);
+
 
         System.out.println("Mennyit kíván befizetni az első számlára?");
         bankAccount.deposit(scanner.nextInt());
@@ -46,7 +50,6 @@ public class BankAccountMain {
             System.out.println(anotherBankAccount.getInfo());
 
 
-
         System.out.println("Mekkora összeg vezetne át az elsőszámláról a másikra?");
         int transferAmount = scanner.nextInt();
 
@@ -55,7 +58,4 @@ public class BankAccountMain {
         System.out.println(bankAccount.getInfo());
         System.out.println(anotherBankAccount.getInfo());
     }
-
-
-
 }
