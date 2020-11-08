@@ -13,11 +13,11 @@ public class Time {
 
     public int getInMinutes(){
         int hourInMinute = 60;
-        return hour * hourInMinute + minute;
+        return (hour * hourInMinute) + minute;
     }
     public int getInSecond(){
         int minuteInSecond = 60;
-        return minute * minuteInSecond + second;
+        return (getInMinutes() * minuteInSecond) + second;
     }
    public String toString(){
        return hour+" : " + minute + " : " + second;

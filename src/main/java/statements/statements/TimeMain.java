@@ -15,5 +15,6 @@ public class TimeMain {
         Time time = new Time(firstHour, firstMinute, firstSecold);
 
         System.out.println("Első időpont: " + time.toString() +" Az = " + time.getInMinutes()+ " perc ");
+        System.out.println("Első időpont másodtpercben: " + time.getInSecond());
     }
 }
