@@ -1,0 +1,42 @@
+package introcontrol.introcontrol;
+
+public class IntroControl {
+
+
+    public int substractTenIfGreaterThanTen(int number){
+          if (number <= 10){
+             return number;
+       }
+          else {
+             return  number-10;
+       }
+    }
+
+    public String describeNumber(int number){
+        if (number == 0){
+            return "Zero";
+        }
+        else {
+            return "Not Zero";
+        }
+    }
+
+        public String greetingToJoe(String name){
+            if (name.equals("Joe")){
+                return "Hello Joe";
+            }
+            else {
+                return "";
+        }
+    }
+    public int calculateBonus(int sale){
+        return
+    }
+
+
+
+
+
+}
+
+
