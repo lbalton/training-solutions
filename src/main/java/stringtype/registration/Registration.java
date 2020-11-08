@@ -25,6 +25,6 @@ public class Registration {
 
         System.out.println(userValidator.isValidPassword(pass1,pass2)? "Jelszó OK": "Nem megfelelő a jelszó!");
 
-
+        System.out.println(userValidator.isValidEmail(emailAddress) ? "e-mail OK" : "Nem megfelelő emailcím");
     }
 }
