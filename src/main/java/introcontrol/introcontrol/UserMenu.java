@@ -17,6 +17,7 @@ public class UserMenu {
         if (selected == 1){
             System.out.println("Felhasználók kilistázása");
         }
+
         if (selected == 2){
             System.out.println("Felhasználó felvétele");
         }
