@@ -9,7 +9,7 @@ public class SocialNetwork {
 
     public String addMember(String name){
         members.add(new Member(name));
-        return null;
+        return null ;
     }
 
 }

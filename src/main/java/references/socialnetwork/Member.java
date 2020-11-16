@@ -20,7 +20,7 @@ public class Member {
     }
 
     public List<Member> getConnections(){
-        return connections;
+        return connections ;
     }
 
     public void connectMember(Member member){
