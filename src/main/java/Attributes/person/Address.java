@@ -2,6 +2,7 @@ package Attributes.person;
 
 public class Address {
 
+    public Address addressToString;
     private String country;
     private String city;
     private String streetAndNumber;

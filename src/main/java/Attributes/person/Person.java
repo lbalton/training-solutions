@@ -24,7 +24,7 @@ public class Person {
     }
 
     public Address getAddress(){
-        return Address;
+        return address.addressToString ;
     }
 
 }
