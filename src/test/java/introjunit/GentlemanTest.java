@@ -13,16 +13,19 @@ public class GentlemanTest {
 
     Gentleman gentleman = new Gentleman();
 
-    String name = gentleman.sayHello("Don");
-
-    assertThat(name, equalTo("Hello Don"));
-
+         String name = gentleman.sayHello("Don Joe");
+       assertThat(name, equalTo("Hello Don Joe"));
 
 
-    
-
+        String AnotherName = gentleman.sayHello("Balint");
+        assertThat(AnotherName, equalTo("Hello Anunimus"));
 
 
 
-}
+
+
+
+
+
+    }
 }

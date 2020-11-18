@@ -5,8 +5,10 @@ public class Gentleman {
 
 
     public String sayHello(String name){
-        return "Hello " + name;
-
+        if (name == "Don Joe"){
+            return "Hello Don Joe";
+        }
+            else return  "Hello Anunimus";
     }
 
 }
