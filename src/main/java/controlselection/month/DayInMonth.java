@@ -5,7 +5,7 @@ public class DayInMonth {
 
 
 
-    public String DayInTheMonth(String nameOfMonth) {
+    public String dayInTheMonth(String nameOfMonth) {
 
         nameOfMonth.toLowerCase();
         String numberOfDayInMonth;
