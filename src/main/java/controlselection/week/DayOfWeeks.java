@@ -20,7 +20,7 @@ public class DayOfWeeks {
                 weekPosition = "Már a hét közepe van! :| ";
         break;
 
-            case "Péntek":
+            case "péntek":
                 weekPosition = "Már mindjárt hétvége! :)";
         break;
 
@@ -29,11 +29,12 @@ public class DayOfWeeks {
                 weekPosition = " Juhhu hétvége! :D";
         break;
 
-            default: throw new IllegalArgumentException("Invalid day: " + nameOfDay);
+            default: throw new IllegalArgumentException("Ismeretlen nap! ");
         }
             return weekPosition;
 
 
     }
+
     }
 
