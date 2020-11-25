@@ -15,7 +15,7 @@ public class ChangeLetterTest {
 
         ChangeLetter changeLetter =  new ChangeLetter();
 
-        assertEquals("******", new ChangeLetter().changeVowels("AOUEYA"));
+        assertEquals("*******", new ChangeLetter().changeVowels("AOUEYAA"));
         assertEquals("S*MM*F*L*K*PP*NS*M", new ChangeLetter().changeVowels("SEMMIFELEKEPPENSEM"));
 
         }

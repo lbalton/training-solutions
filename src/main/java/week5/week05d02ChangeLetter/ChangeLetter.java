@@ -15,7 +15,7 @@ public class ChangeLetter {
         ChangeLetter changeLetter = new ChangeLetter();
 
         System.out.println(changeLetter.changeVowels("AUEOUYyaeioufvonysdovyyndsonyyfdsfdsofndsfn fohnsdfoyyysdn fosdfn sdfo n"));
-        System.out.println(changeLetter.changeVowels("YYYYYYAEAEAEyyyyyYYYYH1B4TL4NYYYYYYYyyyYYYAEAEAYyyYyYy"));
+        System.out.println(changeLetter.changeVowels("YYYYYYAEAEAEyyyyyYYYYH1B4TL4NYYYYYYYyyyYYYAEAEAYyyYyYyy"));
 
 
 
