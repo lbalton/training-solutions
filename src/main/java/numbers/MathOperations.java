@@ -30,12 +30,11 @@ public class MathOperations {
                 else System.out.println("Sajnos helytelen a megoldás!");
 
 
-    System.out.println("Feladat 3:      12 - (6 * 2 - 3) ?");
+    System.out.println("Feladat 4:      12 - (6 * 2 - 3) ?");
 
         int Feladat4 = scanner.nextInt();
         if (Feladat4 == 3)
             System.out.println("Helyes a megoldás!");
                 else System.out.println("Sajnos helytelen a megoldás!");
-
     }
 }

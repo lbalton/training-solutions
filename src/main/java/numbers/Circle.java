@@ -21,12 +21,12 @@ public class Circle {
 
     public static void main(String[] args) {
 
-        Circle circleOne = new Circle(5.0,3.14);
+        Circle circleOne = new Circle(4.0,3.14);
 
         System.out.println("Az első kör kerülete: " + circleOne.korKerulete());
         System.out.println("Az első kör területe: " + circleOne.korTerulete());
 
-        Circle circleTwo = new Circle(3.4, 3.14);
+        Circle circleTwo = new Circle(2.4, 3.14);
 
         System.out.println("A második kör kerülete: " + circleTwo.korKerulete());
         System.out.println("A második kör területe: " + circleTwo.korTerulete());
