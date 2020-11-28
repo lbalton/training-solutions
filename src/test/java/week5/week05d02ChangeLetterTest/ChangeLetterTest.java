@@ -1,15 +1,16 @@
 package week5.week05d02ChangeLetterTest;
 
-import week5.week05d02ChangeLetter.ChangeLetter;
 import org.junit.jupiter.api.Test;
+import week5.week05d02ChangeLetter.ChangeLetter;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class ChangeLetterTest {
 
+
+
     @Test
-
-
 
     public void testCreate() {
 
