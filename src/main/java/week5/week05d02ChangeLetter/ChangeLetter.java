@@ -2,9 +2,10 @@ package week5.week05d02ChangeLetter;
 
 public class ChangeLetter {
 
-    public String changeVowels(String text){
 
-        String textWithOutVowel = text.replaceAll("[a,A,e,E,i,I,o,O,u,U,y,Y]","*");
+    public String changeVowels(String text) {
+
+        String textWithOutVowel = text.replaceAll("[a,A,e,E,i,I,o,O,u,U,y,Y]", "*");
 
         return textWithOutVowel;
 
@@ -18,7 +19,6 @@ public class ChangeLetter {
         System.out.println(changeLetter.changeVowels("YYYYYYAEAEAEyyyyyYYYYH1B4TL4NYYYYYYYyyyYYYAEAEAYyyYyYyy"));
 
 
-
-
     }
 }
+
