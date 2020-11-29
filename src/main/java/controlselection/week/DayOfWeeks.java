@@ -29,7 +29,8 @@ public class DayOfWeeks {
                 weekPosition = " Juhhu hétvége! :D";
         break;
 
-            default: throw new IllegalArgumentException("Ismeretlen nap! ");
+            default:
+                throw new IllegalArgumentException("Ismeretlen Nap!");
         }
             return weekPosition;
 

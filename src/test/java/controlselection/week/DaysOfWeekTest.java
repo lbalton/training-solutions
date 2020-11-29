@@ -15,8 +15,13 @@ public class DaysOfWeekTest {
         assertEquals("Már mindjárt hétvége! :)", new DayOfWeeks().dayOfTheWeek("PéNtEk"));
         assertEquals(" Juhhu hétvége! :D", new DayOfWeeks().dayOfTheWeek("szomBat"));
 
-        //assertEquals("Ismeretlen nap!", new DayOfWeeks().dayOfTheWeek("perec"));
-
-
     }
-}
+
+        @Test
+        public void testIllegalDay(){
+
+
+            assertThrows(IllegalArgumentException.class,() -> new DayOfWeeks().dayOfTheWeek("kapor"));
+        }
+    }
+
