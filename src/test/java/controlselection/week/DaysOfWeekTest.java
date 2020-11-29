@@ -13,7 +13,7 @@ public class DaysOfWeekTest {
         assertEquals("Még csak a hét legeleje van. :( ", new DayOfWeeks().dayOfTheWeek("Hétfő"));
         assertEquals("Már a hét közepe van! :| ", new DayOfWeeks().dayOfTheWeek("szerda"));
         assertEquals("Már mindjárt hétvége! :)", new DayOfWeeks().dayOfTheWeek("PéNtEk"));
-        assertEquals(" Juhhu hétvége! :D", new DayOfWeeks().dayOfTheWeek("szomBat"));
+        assertEquals(" Juhhu hétvége! :D" , new DayOfWeeks().dayOfTheWeek("szomBat"));
 
     }
 
