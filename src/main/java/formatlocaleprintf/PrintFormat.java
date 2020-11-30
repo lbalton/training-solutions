@@ -2,8 +2,8 @@ package formatlocaleprintf;
 
 public class PrintFormat {
 
-    public String printFormattedText(Double number){
-        String formatedText = String.format("The value is %f",number);
+    public String printFormattedText(Double dnumber){
+        String formatedText = String.format("The value is %2.1f",dnumber);
         return formatedText;
     }
 
@@ -22,7 +22,7 @@ public class PrintFormat {
 
         public static void main(String[] args) {
         PrintFormat printFormat = new PrintFormat();
-        System.out.println(printFormat.printFormattedText(2, "Apple"));
+            System.out.println(printFormat.printFormattedText(2, "Apple"));
             System.out.println(printFormat.printFormattedText(2.2));
             System.out.println(printFormat.printFormattedText(23));
     }
