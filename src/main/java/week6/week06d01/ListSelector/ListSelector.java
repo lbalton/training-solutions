@@ -1,4 +1,4 @@
-/*package week6.week06d01.ListSelector;
+package week6.week06d01.ListSelector;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,14 +8,25 @@ public class ListSelector {
 
 
 
-    public String getEverySecond (List text){
-        for (int x = 1; 0 < text.indexOf(); )
+    public String getEverySecond (List<String> text){
 
-    return text.toString();
+        StringBuilder result =  new StringBuilder();
 
+        if (text == null){
+            throw new IllegalArgumentException("Nem lehet üres a lista");
+        }
 
+        if (text.size() !=0){
+            result.append("[");
+            for(int i = 0; i < text.size(); i+=2){
+                result.append(" ");
+                result.append(text.get(i));
+            }
+            result.append("]");
+
+        }
+        return result.toString();
     }
-
 
     public static void main(String[] args) {
 
@@ -43,4 +54,3 @@ public class ListSelector {
 
 
 }
-*/
