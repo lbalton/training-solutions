@@ -4,14 +4,13 @@ public class MathAlgorithms {
 
     public boolean isPrime(int x){
 
-        if (x <= 1)
+        if (x <= 1){
             return false;
-
+        }
         for (int i = 2; i < x; i++){
             if (x % i == 0)
                 return false;
         }
-
         return true;
     }
 
@@ -21,5 +20,5 @@ public class MathAlgorithms {
 
         System.out.println(mathAlgorithms.isPrime(103));
 
-    }
+  }
 }
