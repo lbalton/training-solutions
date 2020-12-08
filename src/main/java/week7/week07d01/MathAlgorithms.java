@@ -1,4 +1,4 @@
-package week07d01;
+package week7.week07d01;
 
 public class MathAlgorithms {
 
