@@ -27,6 +27,7 @@ public class HeadQuarter {
         return  null;
     }
 
+
     public void moveTrooperByName(String name ,Position target){
         Trooper trooper = findTrooperByName(name);
         if (trooper != null){

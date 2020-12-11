@@ -25,4 +25,5 @@ public class Position {
         return Math.sqrt(Math.pow(this.posX - position.posX, 2) + Math.pow(this.posY - position.posY, 2));
     }
 
+
 }

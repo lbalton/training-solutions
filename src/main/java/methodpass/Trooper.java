@@ -24,4 +24,5 @@ public class Trooper {
     public double distanceFrom(Position target){
         return this.position.distanceFrom(position);
     }
+
 }
