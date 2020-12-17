@@ -1,7 +1,8 @@
 package introinheritance.personemployeeboss;
 
-class BigBoss extends Boss {
+import java.lang.management.BufferPoolMXBean;
 
+class BigBoss extends Boss {
 
   private double bonus;
 
@@ -15,6 +16,7 @@ class BigBoss extends Boss {
     }
 
     public double getSalary(){
-        return LEADERSHIP_FACTOR * numberOfEmployees + salary + bonus;
+        return super.getLEADERSHIP_FACTOR() * super.getNumberOfEmployees() + super.getSalary() + bonus;
     }
+
 }

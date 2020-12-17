@@ -2,9 +2,9 @@ package introinheritance.personemployeeboss;
 
 class Boss extends Employee {
 
-     final double LEADERSHIP_FACTOR = 0.1;
+     private final double LEADERSHIP_FACTOR = 0.1;
 
-     int numberOfEmployees;
+     private int numberOfEmployees;
 
     public Boss(String name, String address, double salary, int numberOfEmployees) {
         super(name, address, salary);
@@ -12,12 +12,14 @@ class Boss extends Employee {
     }
 
     public double getSalary(){
-        return salary = LEADERSHIP_FACTOR * numberOfEmployees + salary ;
+        return super.getSalary() + super.getSalary() + LEADERSHIP_FACTOR * numberOfEmployees;
     }
 
     public int getNumberOfEmployees(){
         return this.numberOfEmployees;
     }
 
-
+    public double getLEADERSHIP_FACTOR() {
+        return LEADERSHIP_FACTOR;
+    }
 }

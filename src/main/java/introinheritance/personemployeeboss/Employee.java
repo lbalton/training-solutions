@@ -3,7 +3,7 @@ package introinheritance.personemployeeboss;
 
 class Employee extends Person{
 
-    double salary;
+    private double salary;
 
     public Employee(String name, String address, double salary) {
         super(name, address);
@@ -11,7 +11,7 @@ class Employee extends Person{
     }
 
     public double getSalary(){
-        return this.salary;
+        return salary;
     }
 
     public void raiseSalary(int percent){
