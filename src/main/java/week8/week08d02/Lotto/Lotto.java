@@ -12,7 +12,7 @@ public class Lotto {
         List<Integer> Lotto = new ArrayList<>();
 
         for(int x = 0; x < 5 ; x++){
-            int number = new Random().nextInt(91);
+            int number = new Random().nextInt(90)+1;
             if(!Lotto.contains(number)){
                 Lotto.add(number);
             }
@@ -22,7 +22,7 @@ public class Lotto {
                         Lotto.remove(i);
                     }
                 }
-                Lotto.add(new Random().nextInt(91));
+                Lotto.add(new Random().nextInt(90)+1);
             }
         }
         return  Lotto;
