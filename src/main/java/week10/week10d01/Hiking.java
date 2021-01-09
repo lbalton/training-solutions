@@ -11,8 +11,9 @@ public class Hiking {
 
        double sum = 0;
        for (int x = 1; x < High.size() ;x++){
-          if (High.get(x) > High.get(x-1));
+          if (High.get(x) > High.get(x-1)){
           sum += High.get(x)-High.get(x-1);
+       }
        }
 
        return sum;
