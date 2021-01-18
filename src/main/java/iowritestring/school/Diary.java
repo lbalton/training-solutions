@@ -9,13 +9,11 @@ import java.util.Scanner;
 public class Diary {
 
 
-
-    public String newMark(String name, int rate){
-        String St = name +" "+ rate;
+    public String newMark(String name, int rate) {
+        String St = name + " " + rate;
 
         return St;
     }
-
 
 
     public static void main(String[] args) {
@@ -31,9 +29,8 @@ public class Diary {
 
         Path file = Path.of("tanulo_neve.txt");
         try {
-            Files.writeString(file,name +" "+ rate, StandardOpenOption.APPEND);
-        }
-        catch (IOException ioe) {
+            Files.writeString(file, name + " " + rate + " ", StandardOpenOption.APPEND);
+        } catch (IOException ioe) {
             throw new IllegalStateException("Can not write file", ioe);
         }
 
