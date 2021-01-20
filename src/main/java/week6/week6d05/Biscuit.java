@@ -1,6 +1,4 @@
-package week6.week06d05.Biscuit;
-
-import java.lang.reflect.Type;
+package week6.week6d05;
 
 public class Biscuit {
 

@@ -1,4 +1,4 @@
-package week6.week06d05.Biscuit;
+package week6.week6d05;
 
 public enum BiscuitType {
     OREO,
