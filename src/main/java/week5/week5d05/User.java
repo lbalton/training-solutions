@@ -1,6 +1,4 @@
-package week5.week05d05.User;
-
-import week5.week05d04Product.Store;
+package week5.week5d05;
 
 public class User {
 

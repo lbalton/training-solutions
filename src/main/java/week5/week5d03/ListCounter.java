@@ -1,4 +1,4 @@
-package week5.week05d03.ListCounter;
+package week5.week5d03;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +13,7 @@ public class ListCounter {
         int i = 0;
 
         for (String li : list){
-            li.toLowerCase();
-            if ( li.toLowerCase().startsWith("a")){
+            if ( li.startsWith(("A")) ||li.toLowerCase().startsWith(("a"))){
                 i++;
             }
 

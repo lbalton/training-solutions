@@ -1,6 +1,7 @@
-package week5.week05d04Product;
+package week5.week5d04;
 
-import java.time.LocalDate;
+import week5.week5d04.Product;
+
 import java.util.ArrayList;
 import java.util.List;
 
