@@ -1,7 +1,4 @@
-package week6.week6d02;
-
-import week6.week6d02.Categ;
-import week6.week6d02.Product;
+package week6.week06d02;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package week6.week6d02;
+package week6.week06d02;
 
 public enum Categ {
 
