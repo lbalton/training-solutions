@@ -1,4 +1,4 @@
-package week7d03;
+package week7.week7d03;
 
 
 import java.util.ArrayList;
@@ -28,6 +28,7 @@ public class NumberList {
         numbersLi.add(7);
         numbersLi.add(111);
         numbersLi.add(3000);
+
 
         System.out.println(numberList.isIncreasing(numbersLi));
 

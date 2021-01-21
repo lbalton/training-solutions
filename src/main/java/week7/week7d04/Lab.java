@@ -1,7 +1,5 @@
-/*
-        package week7d04;
 
-
+package week7.week7d04;
 
 import java.time.LocalDate;
 
@@ -14,7 +12,6 @@ public class Lab {
 
     public Lab(String title) {
         this.title = title;
-        this.completed = false;
     }
 
     public Lab(String title, LocalDate completedAt) {
@@ -23,30 +20,31 @@ public class Lab {
         this.completed = true;
     }
 
-
-
-
-    public void complete(int year,int month,int day){
-        this.completedAt = LocalDate.of(year, month, day);
+    public void complete(LocalDate completedAt){
+        this.completedAt = completedAt;
         this.completed = true;
     }
 
     public void complete(){
-        this.completedAt = LocalDate.now();
+        completed = true;
+        completedAt = LocalDate.now();
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Lab{" +
+                "title='" + title + '\'' +
+                ", completed=" + completed +
+                ", completedAt=" + completedAt +
+                '}';
+    }
 
     public static void main(String[] args) {
 
         Lab lab = new Lab("BankProject");
 
-        System.out.println(lab.complete(1992, 03, 01));
-
-
+        System.out.println(lab.completed);
 
 
     }
 }
-*/
