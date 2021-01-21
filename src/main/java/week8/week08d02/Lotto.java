@@ -1,4 +1,4 @@
-package week8.week08d02.Lotto;
+package week8.week08d02;
 
 import java.util.ArrayList;
 import java.util.List;
