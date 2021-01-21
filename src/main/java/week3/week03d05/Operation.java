@@ -1,4 +1,4 @@
-package week3.week3d05;
+package week3.week03d05;
 
 public class Operation {
 
