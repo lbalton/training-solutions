@@ -1,9 +1,7 @@
 package ioreader.idread;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-
 import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,16 +35,6 @@ public class IdManager {
             throw new IllegalStateException("Cant reach the file", IO);
         }
 
-
-        Path fileRead = Path.of("idnumbers.txt");
-        try (BufferedReader reader = Files.newBufferedReader(file)) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (IOException ioe) {
-            throw new IllegalStateException("Can not read file", ioe);
-        }
 
         IdManager idManager = new IdManager();
 
