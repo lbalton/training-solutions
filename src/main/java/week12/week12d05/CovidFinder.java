@@ -31,11 +31,40 @@ public class CovidFinder {
     }
 
 
+    public String numberScanner(int num){
+
+        Path path = Path.of("Index.html");
+
+        try(BufferedReader br = Files.newBufferedReader(path)){
+
+            String line;
+            int counter = 0 ;
+            String inStr = Integer.toString(num);
+
+
+            while((line = br.readLine()) != null){
+                if (line.contains(inStr)){
+                counter++ ;
+                }
+
+            }
+            return "A szám ennyiszer olvasható a szövegbe: " + counter;
+
+        }catch (IOException ioe){
+            throw new IllegalStateException("Cant read the file", ioe);
+        }
+
+
+    }
+
+
     public static void main(String[] args) {
 
         CovidFinder covidFinder = new CovidFinder();
 
         System.out.println(covidFinder.wordScanner("covid"));
+        System.out.println(covidFinder.wordScanner("kutya"));
+        System.out.print(covidFinder.numberScanner(1));
 
 
     }
