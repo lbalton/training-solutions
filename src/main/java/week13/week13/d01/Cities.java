@@ -11,38 +11,37 @@ public class Cities {
     public String shortestCitiName() {
 
         try (BufferedReader bf = Files.newBufferedReader(Path.of("Cities.txt"))) {
-            String line;
 
-            String citiLongest = ".";
+            String line;
+            String longestCiti = "";
+            // bf.readLine(); //Skip first header line
+
             skipHeader(bf);
+
             while ((line = bf.readLine()) != null) {
-                String[] part = line.split(";");
-                String name = part[1];
-                for (int i = 0; i < name.length(); i++) {
-                    if (name.length() > citiLongest.length()) {
-                        citiLongest = name;
-                    }
+                String[] Part = line.split(";");
+                if (Part[1].length() > longestCiti.length()) {
+                    longestCiti = Part[1];
                 }
 
             }
+            return longestCiti;
 
-            return citiLongest;
 
         } catch (IOException ioe) {
-            throw new IllegalStateException("Can not read the file", ioe);
+            throw new IllegalStateException("File nem található!", ioe);
         }
+
     }
 
-    public void skipHeader(BufferedReader bf) throws IOException {
 
+    public void skipHeader(BufferedReader bf) throws IOException {
         bf.readLine();
     }
 
-
     public static void main(String[] args) {
-        Cities cities = new Cities();
 
-        System.out.println(cities.shortestCitiName());
+        System.out.println(new Cities().shortestCitiName());
 
     }
 
