@@ -10,7 +10,7 @@ import java.util.List;
 public class SubjectData {
 
 
-    public int Teacher(String TeacherName) {
+    public int SubjectHours(String TeacherName) {
 
         try (BufferedReader bf = Files.newBufferedReader(Path.of("Beosztas.txt"))) {
 
@@ -75,10 +75,10 @@ public class SubjectData {
 
     public static void main(String[] args) {
 
-        /* tanár nevek: Albatrosz Aladin , Antilop Anett , Bagoly Barbara , Cet Celina , Csincsilla Csilla ,Daru Dalbert ,Impala Izabella,
-        Lepke Lenke , Maky Marcell ,Medve Melani ,Oposszum Opika ,Panda Patrik,Sas Samu.*/
 
         System.out.println(new SubjectData().NameOfTeacher());
+        System.out.println(new SubjectData().SubjectHours("Cet Celina"));
+        System.out.println(new SubjectData().SubjectHours("Lepke Lenke"));
 
 
     }
