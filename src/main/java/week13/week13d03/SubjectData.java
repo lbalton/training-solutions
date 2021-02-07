@@ -38,7 +38,7 @@ public class SubjectData {
             for (int x = 0; x < hours.size(); x++) {
                 theHours = hours.get(x) + theHours;
             }
-
+            System.out.println("A tanár ennyi órát tart: ");
             return theHours;
 
         } catch (IOException ioe) {
@@ -77,8 +77,8 @@ public class SubjectData {
 
 
         System.out.println(new SubjectData().NameOfTeacher());
-        System.out.println(new SubjectData().SubjectHours("Cet Celina"));
-        System.out.println(new SubjectData().SubjectHours("Lepke Lenke"));
+       System.out.println(new SubjectData().SubjectHours("Daru Dalbert"));
+       System.out.println(new SubjectData().SubjectHours("senki"));
 
 
     }
