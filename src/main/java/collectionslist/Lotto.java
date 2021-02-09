@@ -55,7 +55,14 @@ public class Lotto {
 
     public static void main(String[] args) {
 
-        System.out.println(new Lotto().selectWinningNumbers(5, 20));
+
+        System.out.println(new Lotto().selectWinningNumbers(5, 90));
+        System.out.println(new Lotto().selectWinningNumbers(6, 90));
+        System.out.println(new Lotto().selectWinningNumbers(5, 80));
+        System.out.println(new Lotto().selectWinningNumbers(5, 88));
+        System.out.println(new Lotto().selectWinningNumbers(1, 3));
+
+
 
     }
 }
