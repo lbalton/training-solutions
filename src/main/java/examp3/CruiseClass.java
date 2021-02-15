@@ -4,4 +4,7 @@ public enum CruiseClass {
     LUXURY,
     FIRST,
     SECOND,
+
+
 }
+
