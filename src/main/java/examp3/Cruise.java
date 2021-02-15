@@ -2,6 +2,7 @@ package examp3;
 
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -26,26 +27,38 @@ public class Cruise {
 
     public double getPriceForPassenger(Passenger passenger) {
 
-        passenger.getCruiseClass().;
+       passenger.getCruiseClass() * basicPrice;
     }
 
     public Passenger findPassengerByName(String name) {
 
-        for (String item : )
+      List<Passenger> passengers = new ArrayList<>();
 
+
+      Passenger find = ;
+
+      for (Passenger item : passengers){
+          if (!item.getName().equals(name)){
+              throw new IllegalArgumentException("Nincs ilyen név!" + name);
+          }
+          if (item.getName().equals(name)){
+              find = item;
+          }
+      }
+      return find;
     }
 
     public List<String> getPassengerNamesOrdered(){
-
+return null;
     }
 
 
     public double sumAllBookingsCharged(){
-
+        return 0.0;
     }
 
-    public Map<CruiseClass, Integer> countPassangerByClass(){
-
+    public Map<CruiseClass, Integer> countPassengerByClass(){
+        return null;
     }
 
 }
