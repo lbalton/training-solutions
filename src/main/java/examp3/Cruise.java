@@ -2,9 +2,7 @@ package examp3;
 
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Cruise {
 
@@ -49,7 +47,16 @@ public class Cruise {
     }
 
     public List<String> getPassengerNamesOrdered(){
-return null;
+
+        List<Passenger> passengers = new ArrayList<>();
+
+       Collections.sort(passengers, new Comparator<Passenger>() {
+           @Override
+           public int compare(Passenger o1, Passenger o2) {
+               return 0;
+           }
+       });
+
     }
 
 
