@@ -1,4 +1,4 @@
-package examp3;
+package exam03;
 
 public enum CruiseClass {
 
@@ -6,6 +6,10 @@ public enum CruiseClass {
 
 
     private final double price;
+
+    public double getPrice() {
+        return price;
+    }
 
     CruiseClass(double price){
         this.price=price;

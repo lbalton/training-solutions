@@ -1,4 +1,4 @@
-package examp3;
+package exam03;
 
 public class Boat {
 

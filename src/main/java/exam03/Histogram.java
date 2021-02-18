@@ -1,4 +1,4 @@
-package examp3;
+package exam03;
 
 
 import java.io.BufferedReader;
@@ -16,6 +16,7 @@ public class Histogram {
 
         StringBuilder giveBack = new StringBuilder();
 
+
         try {
             String line;
             while ((line = bf.readLine()) != null) {
@@ -29,6 +30,7 @@ public class Histogram {
         } catch (IOException ioe) {
             throw new IllegalStateException("Can't read the file", ioe);
         }
+
         return giveBack.toString();
     }
 
