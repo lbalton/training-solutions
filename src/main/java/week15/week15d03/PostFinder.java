@@ -13,7 +13,7 @@ public class PostFinder {
         List<Post> post = new ArrayList<>();
 
         for (Post item : posts){
-            if (item.getOwner().equals(user) && item.getPublishedAt().isBefore(LocalDate.now()) && item.getContent().isBlank() && item.getTitle().isBlank()){
+            if (item.getOwner().equals(user) && item.getPublishedAt().isBefore(LocalDate.now()) && !item.getContent().isBlank() && !item.getTitle().isBlank()){
                 post.add(item);
             }
         }
